@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Profissional de Bruno Manuel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <style>
+    :root{
+      --azul:#0d47a1; --azul-600:#1565c0; --borda:#e6eaf0; --texto:#222;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif; color:var(--texto);
+      background:url('../assets/Bruno.jpg') center/cover fixed no-repeat;
+    }
+    .overlay{background:rgba(255,255,255,0.9); min-height:100vh}
+    .container{max-width:1100px; margin:0 auto; padding:0 20px}
+    /* Banner */
+    header.banner{
+      position:relative; min-height:260px; display:flex; align-items:flex-end;
+      background:linear-gradient(rgba(13,71,161,0.70), rgba(13,71,161,0.70)), url('../assets/Bruno.jpg') center/cover no-repeat;
+      color:#fff; border-bottom:1px solid var(--borda); border-radius:0 0 18px 18px;
+      box-shadow:0 6px 18px rgba(0,0,0,.10); padding:28px 0;
+    }
+    header .title{padding:0 20px 8px}
+    header h1{margin:0; font-size:32px; font-weight:900; letter-spacing:.2px}
+    header p{margin:6px 0; font-size:18px; opacity:.98}
+    nav{
+      display:flex; gap:12px; flex-wrap:wrap; padding:10px 20px 18px;
+    }
+    nav a{
+      color:#fff; text-decoration:none; border:1px solid rgba(255,255,255,.5);
+      padding:8px 12px; border-radius:10px;
+    }
+    nav a:hover{background:#ffffff22}
+    section{padding:44px 0}
+    h2{margin:0 0 14px; font-size:24px; color:var(--azul)}
+    .card{
+      background:#fff; border:1px solid var(--borda); border-radius:14px; padding:22px;
+      box-shadow:0 6px 18px rgba(0,0,0,.06); margin-bottom:22px;
+    }
+    /* Hobbies grid */
+    .hobbies{display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .hobby{background:#f6faff; border:1px solid var(--borda); border-radius:12px; padding:16px; text-align:center}
+    .hobby strong{display:block; margin-top:6px}
+    .hobby:hover{transform:translateY(-2px); box-shadow:0 8px 18px rgba(0,0,0,.06); transition:.2s}
+    /* Contact buttons */
+    .actions{display:flex; gap:10px; flex-wrap:wrap; justify-content:center}
+    .btn{display:inline-block; padding:10px 14px; border-radius:10px; text-decoration:none; color:#fff;
+         background:linear-gradient(135deg,var(--azul),var(--azul-600)); border:1px solid #0c3e8b}
+    .btn:hover{transform:translateY(-2px); box-shadow:0 8px 18px rgba(13,71,161,.25)}
+    footer{
+      text-align:center; color:#fff; padding:36px 20px;
+      background:linear-gradient(rgba(13,71,161,0.85), rgba(13,71,161,0.85)), url('../assets/Bruno.jpg') center/cover no-repeat;
+      border-top:1px solid var(--borda)
+    }
+  </style>
+</head>
+<body>
+<div id="app" class="overlay">
+  <header class="banner">
+    <div class="container title">
+      <h1>Portfólio Profissional de {{ nome }}</h1>
+      <p>Estudante de Engenharia Informática e Tecnologias Web — Universidade Aberta</p>
+      <p>Chefe do Departamento de Serviços e Operações — Centro de Dados do Governo (INAGE)</p>
+      <nav>
+        <a href="#sobre">Quem Sou Eu</a>
+        <a href="#faco">O Que Faço</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contactos">Contactos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="sobre">
+      <div class="card">
+        <h2>Quem Sou Eu</h2>
+        <p>Sou um profissional comprometido com a gestão de infraestruturas críticas e o desenvolvimento de soluções digitais. Tenho experiência em virtualização, redes, segurança e armazenamento de dados. Atualmente, estudo Engenharia Informática e Tecnologias Web na Universidade Aberta, aprofundando competências em tecnologias emergentes e práticas modernas de desenvolvimento web.</p>
+      </div>
+    </section>
+
+    <section id="faco">
+      <div class="card">
+        <h2>O Que Faço</h2>
+        <p>Administro e integro plataformas de TI, garantindo disponibilidade, desempenho e segurança. Trabalho com virtualização (Proxmox/VMware), redes e firewalls, storage e backup, automação e monitorização. O foco é assegurar a eficiência e a resiliência das infraestruturas tecnológicas.</p>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <div class="card">
+        <h2>Hobbies</h2>
+        <div class="hobbies">
+          <div class="hobby">💡 <strong>Inovação e Tecnologia</strong>Exploro novas ferramentas digitais e frameworks modernas.</div>
+          <div class="hobby">📚 <strong>Leitura e Pesquisa</strong>Estudo temas como redes, virtualização, segurança e cloud.</div>
+          <div class="hobby">🎧 <strong>Música</strong>Ajuda-me a manter o foco e a produtividade.</div>
+          <div class="hobby">📷 <strong>Fotografia</strong>Registo eventos e projetos técnicos importantes.</div>
+          <div class="hobby">✈️ <strong>Viagens</strong>Descobrir novas culturas e infraestruturas tecnológicas.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactos">
+      <div class="card" style="text-align:center">
+        <h2>Contactos</h2>
+        <p style="color:#555">Ligações meramente ilustrativas (para avaliação académica):</p>
+        <div class="actions">
+          <a class="btn" href="mailto:bruno.ejm@gmail.com">✉️ E-mail</a>
+          <a class="btn" href="https://linkedin.com/in/brunoemanuel" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a class="btn" href="https://instagram.com/bruno_ejm" target="_blank" rel="noopener">📸 Instagram</a>
+          <a class="btn" href="#" title="WhatsApp (exemplo)">💬 WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 {{ nome }} — MiniProj1 · Universidade Aberta</p>
+  </footer>
+</div>
+
+<script>
+const { createApp } = Vue;
+createApp({ data(){ return { nome: "Bruno Manuel" } } }).mount('#app');
+</script>
+</body>
+</html>

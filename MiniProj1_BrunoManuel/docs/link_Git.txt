@@ -1,0 +1,6 @@
+Link do Repositório GitHub – MiniProj1
+--------------------------------------------------
+Indique aqui o URL do repositório criado para o projeto. Exemplo:
+https://github.com/bruno-ejm/MiniProj1
+
+Nota: verifique se o repositório está acessível ao docente.

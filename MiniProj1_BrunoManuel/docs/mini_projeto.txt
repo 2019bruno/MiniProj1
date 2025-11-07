@@ -1,0 +1,15 @@
+Mini Projeto – SPA (Single Page Application) em VueJS
+--------------------------------------------------
+Introdução (estilo relatório)
+Este mini projeto implementa uma aplicação Web do tipo Single Page Application (SPA), em que todo o conteúdo é servido numa única página (index.html). 
+O objetivo é proporcionar uma navegação fluida, sem recarregamentos completos, através de âncoras internas e componentes reativos de front‑end. 
+A opção por VueJS (via CDN) simplifica a estrutura e permite evidenciar os princípios da SPA de forma leve e didática.
+
+Descrição da solução
+A página apresenta um banner superior com a identidade do autor e, abaixo, as secções: “Quem Sou Eu”, “O Que Faço”, “Hobbies” e “Contactos”. 
+Cada secção foi organizada em cartões, com destaque cromático azul e tipografia Roboto, garantindo clareza visual. 
+A SPA é responsiva (adapta-se a vários ecrãs) e usa navegação por âncoras com scroll suave. Os links de redes sociais são decorativos para efeitos de avaliação.
+
+Conclusão
+A solução cumpre os requisitos do enunciado da Tarefa 2.2: estrutura em página única, uso de VueJS, prototipagem (wireframe) e organização para submissão. 
+O projeto está pronto para envio ao GitHub (MiniProj1) e submissão na plataforma.

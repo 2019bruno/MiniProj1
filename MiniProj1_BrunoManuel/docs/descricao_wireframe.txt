@@ -1,0 +1,14 @@
+Descrição do Wireframe – MiniProj1
+--------------------------------------------------
+Este wireframe representa a estrutura visual da aplicação SPA desenvolvida para a Tarefa 2.2. 
+Segue fielmente o enunciado: banner no topo com identidade, secções retangulares para “Quem Sou Eu”, “O Que Faço” e “Hobbies”, 
+e a área de “Contactos” com identidade virtual (ícones/links ilustrativos). O objetivo é antecipar a aparência e a navegação do produto Web.
+
+Elementos-chave do layout:
+- Banner com fotografia e gradiente azul translúcido, destacando o nome e a afiliação académica;
+- Fundo branco com destaques em azul para títulos e botões;
+- Cartões (retângulos) simétricos com sombra suave, garantindo legibilidade;
+- Grelha de hobbies lado a lado, responsiva;
+- Secção de contactos centralizada, com botões e ícones decorativos.
+
+Ferramenta: prototipagem digital (mockup estático).
